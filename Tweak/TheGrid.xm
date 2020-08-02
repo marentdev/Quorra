@@ -16,7 +16,7 @@
 			[self setHidden:NO];
 			self.userInteractionEnabled = NO;
 
-			UIView *greenDot = [[UIView alloc] initWithFrame:CGRectMake((kWidth/2)-10,34,5,5)];
+			UIView *greenDot = [[UIView alloc] initWithFrame:CGRectMake(kWidth - 10 - 85,8,5,5)];
 			if(noNotch) {	greenDot.frame = CGRectMake(greenDot.frame.origin.x,17,greenDot.frame.size.width,greenDot.frame.size.height); }
 			greenDot.backgroundColor = [UIColor greenColor];
 			greenDot.userInteractionEnabled = NO;
@@ -27,7 +27,7 @@
 			self.greenDot = greenDot;
 
 
-			UIView *yellowDot = [[UIView alloc] initWithFrame:CGRectMake((kWidth/2),34,5,5)];
+			UIView *yellowDot = [[UIView alloc] initWithFrame:CGRectMake(kWidth - 85,8,5,5)];
 			if(noNotch) {	yellowDot.frame = CGRectMake(yellowDot.frame.origin.x,17,yellowDot.frame.size.width,yellowDot.frame.size.height); }
 			yellowDot.backgroundColor = [UIColor yellowColor];
 			yellowDot.userInteractionEnabled = NO;
@@ -38,7 +38,7 @@
 			self.yellowDot = yellowDot;
 
 
-			UIView *redDot = [[UIView alloc] initWithFrame:CGRectMake((kWidth/2)+10,34,5,5)];
+			UIView *redDot = [[UIView alloc] initWithFrame:CGRectMake(kWidth - 85 + 10,8,5,5)];
 			if(noNotch) {	redDot.frame = CGRectMake(redDot.frame.origin.x,17,redDot.frame.size.width,redDot.frame.size.height); }
 			redDot.backgroundColor = [UIColor redColor];
 			redDot.userInteractionEnabled = NO;
